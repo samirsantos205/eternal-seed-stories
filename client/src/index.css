@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-parchment: #FDF6E3;
+  --color-charcoal: #1C1C1E;
+  --color-card-bg: #FAEBD7;
+  --color-amber: #F5A623;
+  --color-amber-hover: #E09415;
+  --color-ink: #2C1A0E;
+  --color-cream: #F5F0E8;
+  --color-brown-muted: #7A6652;
+  --color-soft-border: #E8D5B0;
+  --color-gold: #FFB800;
+  --color-green-success: #5A9E6F;
+  
+  --font-heading: 'Fredoka', sans-serif;
+  --font-body: 'Lato', sans-serif;
+  --font-accent: 'Caveat', cursive;
+
+  --color-background: var(--color-parchment);
+  --color-foreground: var(--color-ink);
+  --color-primary: var(--color-amber);
+  --color-primary-foreground: #FFFFFF;
+}
+
+@layer base {
+  * {
+    @apply border-soft-border;
+  }
+  body {
+    @apply font-body antialiased bg-parchment text-ink;
+  }
+}

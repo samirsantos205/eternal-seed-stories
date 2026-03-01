@@ -1,0 +1,140 @@
+{
+  "design_system": {
+    "name": "Storybook Landing Page",
+    "design_philosophy": "Warm, handcrafted, and trustworthy. Every element should feel like it belongs inside a cozy children's book — illustrated, inviting, and emotionally resonant. Avoid cold or corporate UI patterns. Use contrast between light parchment sections and deep charcoal sections to create rhythm and visual breathing room.",
+
+    "color_palette": {
+      "background_light": "#FDF6E3",
+      "background_dark": "#1C1C1E",
+      "background_card": "#FAEBD7",
+      "primary_accent": "#F5A623",
+      "primary_accent_hover": "#E09415",
+      "text_dark": "#2C1A0E",
+      "text_light": "#F5F0E8",
+      "text_muted": "#7A6652",
+      "border_soft": "#E8D5B0",
+      "star_gold": "#FFB800",
+      "success_green": "#5A9E6F",
+      "section_divider": "#D4B896"
+    },
+
+    "typography": {
+      "heading_font": "Fredoka One or Nunito (rounded, friendly, slightly playful sans-serif)",
+      "body_font": "Lato or Open Sans (clean, readable, warm)",
+      "accent_font": "Caveat or Patrick Hand (handwritten-style for pull quotes and callouts)",
+      "heading_sizes": {
+        "h1": "2.8rem, bold, letter-spacing: -0.5px",
+        "h2": "2rem, bold",
+        "h3": "1.4rem, semibold"
+      },
+      "body_size": "1rem, line-height: 1.7",
+      "quote_size": "1.1rem, italic, handwritten font"
+    },
+
+    "layout": {
+      "max_width": "680px (mobile-first, single column, optimized for vertical scroll)",
+      "section_padding": "40px 20px",
+      "section_rhythm": "Alternate between light (parchment) and dark (charcoal) sections every 2-3 content blocks",
+      "content_alignment": "center-aligned throughout",
+      "image_treatment": "Full-bleed section images or contained illustrated scenes with soft drop shadows"
+    },
+
+    "components": {
+      "hero": {
+        "structure": "Star rating row → headline → subheadline → product image → CTA button",
+        "background": "Warm parchment (#FDF6E3)",
+        "star_row": "5 filled gold stars + review count in muted text, centered",
+        "cta_button": "Large, full-width rounded button, amber background, white bold text, subtle shadow"
+      },
+
+      "social_proof_bar": {
+        "style": "Dark charcoal background (#1C1C1E), white text, centered",
+        "content": "Short punchy trust statement or media logos",
+        "padding": "24px 20px"
+      },
+
+      "testimonial_card": {
+        "background_light_variant": "#FAEBD7 with soft border (#E8D5B0)",
+        "background_dark_variant": "#2A2A2E with light text",
+        "border_radius": "16px",
+        "avatar": "Circular, 48px, with subtle border",
+        "quote_style": "Handwritten accent font, slightly larger, warm amber color for opening quote mark",
+        "name_style": "Bold, dark, small caps or semibold",
+        "verified_badge": "Small green checkmark + 'Verified Purchase' in muted small text"
+      },
+
+      "product_feature_section": {
+        "layout": "Illustrated image left or top + text right or below",
+        "background": "Parchment light",
+        "bullet_style": "Replace bullets with illustrated emoji-style icons or small character art",
+        "feature_text": "Body font, warm dark color, generous line height"
+      },
+
+      "story_preview_section": {
+        "background": "Warm illustrated scene, full-width image",
+        "text_overlay": "Semi-transparent dark overlay with white centered text if needed",
+        "poem_or_excerpt": "Accent/handwritten font, cream color on dark background, centered, generous padding"
+      },
+
+      "cta_button": {
+        "primary": {
+          "background": "#F5A623",
+          "text_color": "#FFFFFF",
+          "font": "Bold, 1.1rem, rounded font",
+          "border_radius": "50px",
+          "padding": "16px 32px",
+          "shadow": "0 4px 14px rgba(245, 166, 35, 0.4)",
+          "hover": "Darken background 10%, scale 1.02"
+        },
+        "secondary": {
+          "background": "transparent",
+          "border": "2px solid #F5A623",
+          "text_color": "#F5A623"
+        }
+      },
+
+      "section_divider": {
+        "style": "Illustrated wave or soft organic SVG divider between light/dark sections",
+        "color": "Matches the receiving section background"
+      },
+
+      "trust_footer": {
+        "background": "#1C1C1E",
+        "content": "Guarantee badge + short reassurance text + secondary CTA",
+        "badge": "Circular seal illustration, centered, 80-100px",
+        "text": "White, centered, small body size"
+      },
+
+      "image_cards": {
+        "border_radius": "20px",
+        "shadow": "0 8px 24px rgba(0,0,0,0.12)",
+        "border": "3px solid #E8D5B0 on light backgrounds, none on dark"
+      }
+    },
+
+    "illustrations_and_imagery": {
+      "style": "Soft watercolor or flat vector children's book illustration style",
+      "characters": "Friendly animals (foxes, bears, koalas, stars with faces) in warm earthy tones",
+      "placement": "Decorative characters appear at section transitions, corners, or alongside testimonials",
+      "product_images": "Shown in context (child reading, book open) not just isolated product shots"
+    },
+
+    "spacing_system": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "32px",
+      "xl": "48px",
+      "xxl": "72px",
+      "section_gap": "0px (sections butt up against each other with color/illustration as separator)"
+    },
+
+    "motion_and_interaction": {
+      "scroll_animations": "Subtle fade-in-up on section entry (200ms ease-out)",
+      "button_hover": "Gentle scale + shadow intensify",
+      "image_hover": "Soft scale 1.03 with shadow"
+    },
+
+    "overall_mood": "Warm, safe, magical, trustworthy. Parents should feel this is a premium gift that will delight their child. Every pixel should reinforce love, story, and quality."
+  }
+}
