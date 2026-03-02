@@ -125,7 +125,11 @@ export default function Home() {
                   onError={(e) => {
                     e.currentTarget.src = "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop";
                   }}
-                />
+                /><div className="w-full grid grid-cols-3 gap-4 mt-4">
+  <img src="/images/reading-kids.png" alt="Crianças lendo" className="w-full h-48 object-cover rounded-xl"/>
+  <img src="/fotos/preview.png" alt="Família lendo" className="w-full h-48 object-cover rounded-xl"/>
+  <img src="/fotos/preview2.png" alt="Crianças com livro" className="w-full h-48 object-cover rounded-xl"/>
+</div>
              </div>
              <div className="bg-white rounded-2xl p-6 shadow-md mt-6 border border-[#E8D5B0] text-center relative mx-4">
                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[12px] border-r-[12px] border-b-[14px] border-l-transparent border-r-transparent border-b-white"></div>
