@@ -345,7 +345,37 @@ export default function Home() {
             Se por qualquer motivo você achar que a coleção 1001 Parábolas Kids não é para sua família, basta nos enviar um único e-mail dentro de 7 dias e devolveremos 100% do seu dinheiro. Sem letras miúdas.
           </p>
         </section>
-        
+        {/* Seção da Especialista */}
+<section className="py-16 px-6 bg-[#FDF6E3]">
+  <div className="max-w-[600px] mx-auto text-center">
+    <p className="text-sm uppercase tracking-widest text-[#8B6914] mb-4">Quem criou esse material</p>
+    <div className="w-24 h-24 rounded-full bg-[#D4A843] mx-auto mb-4 overflow-hidden">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ana Paula Mendes" className="w-full h-full object-cover"/>
+    </div>
+    <h3 className="text-2xl font-bold text-[#2C1A0E] mb-2">Ana Paula Mendes</h3>
+    <p className="text-[#8B6914] mb-4 font-medium">Pedagoga e Educadora Cristã</p>
+    <p className="text-[#2C1A0E]/80 leading-relaxed">Com mais de 10 anos de experiência trabalhando com crianças, Ana Paula desenvolveu as 1001 Parábolas Kids para ajudar famílias a criar momentos de fé e aprendizado. Seu objetivo é transformar histórias simples em lições eternas no coração dos pequenos.</p>
+  </div>
+</section>
+
+{/* FAQ */}
+<section className="py-16 px-6 bg-[#2C1A0E]">
+  <div className="max-w-[600px] mx-auto">
+    <h2 className="text-3xl font-bold text-[#D4A843] text-center mb-10">Perguntas Frequentes</h2>
+    {[
+      { q: "Para qual idade é indicado?", a: "Para crianças de 3 a 12 anos." },
+      { q: "Como recebo o material após a compra?", a: "O acesso é enviado imediatamente para o seu e-mail." },
+      { q: "Funciona no celular?", a: "Sim, pode ser lido no celular, tablet ou computador, ou impresso." },
+      { q: "Posso usar em sala de aula ou culto infantil?", a: "Sim, o material é perfeito para uso em casa, escola e igreja." },
+      { q: "E se eu não gostar?", a: "Você tem 7 dias de garantia. Se não ficar satisfeito, devolvemos seu dinheiro." }
+    ].map((item, i) => (
+      <div key={i} className="mb-6 border-b border-[#D4A843]/30 pb-6">
+        <p className="font-bold text-[#FDF6E3] mb-2">❓ {item.q}</p>
+        <p className="text-[#FDF6E3]/70">{item.a}</p>
+      </div>
+    ))}
+  </div>
+</section>
         {/* FOOTER */}
         <footer className="bg-[#1C1C1E] text-center py-14 text-[12px] text-[#FDF6E3]/40 px-6">
           <div className="flex justify-center gap-6 mb-8 font-medium text-[#FDF6E3]/60">
